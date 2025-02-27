@@ -180,14 +180,14 @@ nav a:hover {
 
 /* Footer Styling - Centered & Consistent */
 footer {
-    background-color: #274472; /* Matching the chapter 1 footer */
+    background-color: #274472; 
     color: white;
     text-align: center;
     padding: 15px;
-    margin: 30px auto; /* Centers footer and keeps space from edges */
+    margin: 30px auto; 
     font-size: 14px;
-    width: 80%; /* Keeps it from touching the page edges */
-    border-radius: 10px; /* Smooths edges for better design */
+    width: 80%; 
+    border-radius: 10px; 
 }
 
 /* Sectioning to improve flow */
@@ -199,7 +199,7 @@ section {
 /* Small enhancements for buttons */
 button {
     padding: 12px 25px;
-    background-color: #486582; /* Blue background */
+    background-color: #486582; 
     color: white;
     font-size: 16px;
     border: none;
@@ -209,5 +209,5 @@ button {
 }
 
 button:hover {
-    background-color: #3b5773; /* Darker blue on hover */
+    background-color: #3b5773; 
 }
