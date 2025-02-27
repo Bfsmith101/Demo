@@ -1,0 +1,213 @@
+
+/* Header Style */
+.home-header h1 {
+    font-family: 'Courier New', Courier, monospace
+    font-size: 3rem; 
+    color: #ffe047; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+    margin-bottom: 10px;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.home-header h1 {
+    animation: bounce 1s ease-in-out;
+}
+
+
+/* Global Styles */
+body {
+    font-family: 'Garamond', serif;
+    background-color: #000; 
+    color: #fff; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the entire page content */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive; 
+    font-size: 3rem;
+    color: #ff5733; 
+    text-align: center;
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 20px; 
+    animation: fadeIn 1.5s ease-out; 
+}
+
+/* Animation fade-in effect */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+header {
+    background: linear-gradient(to right, #4598c8;);
+    padding: 60px 20px;
+    color: white;
+    text-align:center ;
+    font-family: 'Pacifico', cursive; 
+}
+header h1::before {
+    content: "🌟"; /* Star emoji before the text */
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+header h1::after {
+    content: "✨"; /* Sparkle emoji after the text */
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+/* Image container */
+.image-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px;
+    margin: 30px 0;
+    padding: 0 20px;
+    max-width: 100%;
+}
+
+/* Index Page Image */
+.index-image {
+    width: 100%;
+    max-width: 1000px; /* Keeps it large on desktops */
+    height: auto;
+    object-fit: cover;
+}
+
+/* Prevents shrinking too much on larger screens */
+@media (min-width: 1400px) {
+    .index-image {
+        max-width: 1200px; /* Allows extra width for ultra-wide screens */
+    }
+}
+
+/* Main image styling */
+.main-image, .gif {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* GIF adjustments */
+.gif {
+    max-width: 600px;
+    object-fit: contain;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .image-container {
+        padding: 0 10px;
+    }
+
+    .main-image, .gif {
+        max-width: 100%; /* Full width images */
+    }
+}
+
+/* Tablet / Desktop responsiveness */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .image-container {
+        padding: 0 20px;
+    }
+
+    .main-image, .gif {
+        max-width: 90%;
+    }
+}
+
+/* Desktop (Large Screen) adjustments */
+@media (min-width: 1024px) {
+    .image-container {
+        flex-direction: row; /* Horizontal layout */
+        justify-content: center; /* Center the images */
+    }
+
+    .main-image, .gif {
+        max-width: 45%;
+        margin: 0 20px;
+    }
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(245, 244, 239);
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Footer Styling - Centered & Consistent */
+footer {
+    background-color: #274472; /* Matching the chapter 1 footer */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 30px auto; /* Centers footer and keeps space from edges */
+    font-size: 14px;
+    width: 80%; /* Keeps it from touching the page edges */
+    border-radius: 10px; /* Smooths edges for better design */
+}
+
+/* Sectioning to improve flow */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Small enhancements for buttons */
+button {
+    padding: 12px 25px;
+    background-color: #486582; /* Blue background */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b5773; /* Darker blue on hover */
+}
